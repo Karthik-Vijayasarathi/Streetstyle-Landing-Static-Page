@@ -1,0 +1,229 @@
+/* Browser Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+/* Making sure that the content fits the viewport and there is no scroll effect */
+html,body{
+
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    width:100%;
+}
+
+/* Styling the Nav bar */
+
+.navbar-container{
+    display: flex;
+    flex-direction:row ;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+
+
+.list{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    list-style-type: none;
+    column-gap: 4em;
+    font-family: 'Orbitron';
+    font-size: 1.5rem;
+    
+}
+
+.list li:first-child{
+    font-weight: bold;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.list li:first-child::before{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    bottom: 0;
+    left: 15%;
+    border-bottom: 2px solid black;
+    
+}
+
+/* Styling the SEARCH BUTTON */
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1em;
+    justify-content: space-around;
+}
+
+.nav-button{
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.search-icon{
+    padding-top: 5px;
+}
+
+
+/* Styling the LEFT Hero Section */
+
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    
+}
+
+.square{
+    position: absolute;
+    width: 25%;
+    left: 11.5em;
+    bottom: 0px;
+}
+
+.square img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.hero-image{
+    position: absolute;
+    height: 75%;
+    top: 9em;
+    left: 5em;
+}
+
+.hero-image img{
+    object-fit: contain;
+    height: 100%;
+   
+}
+
+/* Styling the RIGHT Hero Section */
+
+.hero-container-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    right: 0px;
+    top:15%;
+
+}
+
+.hero-heading{
+
+    font-family: 'Orbitron';
+    font-size: 4rem;
+}
+
+.hero-description{
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    width: 75%;
+    text-align: center;
+    position: relative;
+    bottom: 3em;
+
+
+}
+
+.button-email{
+    font-family: 'Orbitron';
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    color: grey;
+    background-color: white;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.button-join{
+    font-family: 'Orbitron';
+    font-size: 1.2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 50px;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 28em;
+    
+}
+
+.contact-heading{
+    font-family: 'Poppins';
+    font-size: 1rem;
+    align-self: center;
+    color: grey;
+
+}
+
+.icons{
+
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0px;
+ 
+}
+
+.globe{
+    position: absolute;
+    display: inline-block;
+    left: 53em;
+    top: 6em;
+
+}
+
+.star{
+    position: absolute;
+    left: 43em;
+    top: 34em;
+
+}
+
+.star::after{
+    content: url(/assets/start.png);
+    position: absolute;
+    display: inline-block;
+    left: 43em;
+    top: -27em;
+
+}
